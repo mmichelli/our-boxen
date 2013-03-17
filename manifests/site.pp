@@ -85,4 +85,14 @@ node default {
     ensure => link,
     target => $boxen::config::repodir
   }
+
+  include emacs
+  include slate
+  include tmux
+  include virtualbox
+  include iterm2
+  include zsh
+  include wget
+  include vlc
+
 }
