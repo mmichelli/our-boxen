@@ -44,5 +44,8 @@ github "virtualbox",     "1.0.0"
 github "slate",     "1.0.0"
 github "tmux",     "1.0.0"
 github "emacs",     "1.0.0"
+github "mysql",     "1.0.0"
+github "dropbox", "1.0.0"
+github "cyberduck", "1.0.0"
 
 

@@ -57,9 +57,9 @@ node default {
   include nvm
 
   # fail if FDE is not enabled
-  if $::root_encrypted == 'no' {
-    fail('Please enable full disk encryption and try again')
-  }
+ # if $::root_encrypted == 'no' {
+ #   fail('Please enable full disk encryption and try again')
+ # }
 
   # node versions
   include nodejs::0-4
@@ -86,13 +86,16 @@ node default {
     target => $boxen::config::repodir
   }
 
-  include emacs
+#  include emacs
+ 
+
   include slate
   include tmux
   include virtualbox
-  include iterm2
-  include zsh
+  include iterm2::dev
+  include mysql
+  include dropbox  
   include wget
   include vlc
-
+  include cyberduck
 }
